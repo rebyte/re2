@@ -1,6 +1,8 @@
 'use strict';
 
 var React = require('react');
+var Router = require('react-router');
+var Link = Router.Link;
 
 module.exports = React.createClass({
 
@@ -33,7 +35,9 @@ module.exports = React.createClass({
 
           {this.props.children}
 
-          <div className='footer'><a href='/about'>about us</a></div>
+          <div className='footer'>
+            <a href="/about">about (normal link)</a>
+          </div>
           <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" />
         </body>
         <script src='/bundle.js'></script>

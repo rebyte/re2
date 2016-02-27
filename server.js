@@ -31,7 +31,7 @@ app.set('view', renderer.expressView);
 app.use(express.static(__dirname + '/public'));
 
 // TODO: better sharing with client side react-routers
-var urls = ['/', '/about', '/signup', '/agents'];
+var urls = ['/', '/about', '/signup', '/search'];
 urls.forEach(function(u) {
   app.get(u, function(req, res) {
     console.log('process', req.url);
